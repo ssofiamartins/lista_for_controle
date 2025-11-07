@@ -12,12 +12,16 @@
     const num3 = Number(prompt(`Informe o terceiro número:`));
     const num4 = Number(prompt(`Informe o quarto número:`));
     const num5 = Number(prompt(`Informe o quinto número:`));
-    
+
     //PROCESSAMENTO
     let listaNum = [num1, num2, num3, num4, num5];
 
-    for (let num = 0; num <= 5; num )
-    
+    for (let i = 0; i < listaNum.length; i = i + 1) {
+        listaNum.sort((a, b) => b - a);
+    }
+
+    document.write(`O maior número informado é ${listaNum[0]}`)
+
     //SAÍDA
 
 </script>

@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    listaCrescimento = [];
     
     //PROCESSAMENTO
-
+    for(let hab = 80000; hab <= 200000; hab = hab + (3 / 100 * hab)) {
+        listaCrescimento.push(hab);
+    }
     
     //SAÍDA
-
+    document.write(`Serão necessários ${listaCrescimento.length} anos para que o número de habitandes atinja 200.000 habitantes.`);
 </script>

@@ -5,11 +5,14 @@
     */
 
     //ENTRADA
-
-
+    listaCrescimento = [];
+    
     //PROCESSAMENTO
-
-
+    for(let reais = 1000; reais <= 2000; reais = reais + (2 / 100 * reais)) {
+        listaCrescimento.push(reais);
+    }
+    
     //SAÍDA
+    document.write(`Serão necessários ${listaCrescimento.length} dias para que Joãozinho consiga o total de R$ 2.000,00 investidos.`);
 
 </script>

@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-    
-    
+    let anoCinco = 0;
+    let anoDez = 0;
+    let habitantes = 50000;
     //PROCESSAMENTO
-    
+    for( i = 1; i <= 10; i++) {
+        habitantes = habitantes + (habitantes * 1.5 / 100);
+        if(i === 5) {
+            anoCinco = habitantes;
+        } else if( i === 10) {
+            anoDez = habitantes;
+        }
+    }
 
     //SAÍDA
-
+    document.write(`O número de habitantes no ano cinco é ${anoCinco} e no ano dez é ${anoDez}`);
 </script>
